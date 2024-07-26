@@ -33,17 +33,14 @@ Official implementation of the paper: *Machine learning for Anxiety and Depressi
 Folder `src` contains the `utils.py` that contain the developed functions. functionsfile that generates trained models over folds. Results are stores in the folder `results`. In the `notebook` folder there is the `analysis.ipynb` file that generates all the figures.
 
 ```
-├──  data  - COVICAT dataset and codebook
-|
-├──  reports/figures           - This folder contains all the generated figures
-│ 
 ├──  notebooks
 │   ├── train.ipynb            - Code for the training of ML models
 |   └── evaluation.ipynb       - Code for the evaluation and explainability of ML models
 │
 ├── results/                   - this folder contains final results to report performance and explainability
-│   └── G_anxietyscore/XGBoost
 │   └── G_depressionscore/XGBoost
+│   └── G_anxietyscore/XGBoost
+│   └── G_totalscore/XGBoost
 |   |
 |   └── Logistic Regression
 |   └── Multi-Layer Perceptron
@@ -57,11 +54,6 @@ Folder `src` contains the `utils.py` that contain the developed functions. funct
 │   └── G_depressionscore/
 |   └── G_totalscore/
 │
-├── cv_data/                   - this folder stores post-processed folded data
-│   └── G_anxietyscore/
-│   └── G_depressionscore/
-|   └── G_totalscore/
-|
 ├── src                        - this folder contains utility functions.
 │   └── utils.py
 │   └── config.py
